@@ -1,0 +1,216 @@
+*,body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+$main-head-color: #4E5150;
+$sub-head-color: #333333;
+$place-text-color: #828282;
+$label-color: #4F4F4F;
+$btn-color: #F2994A;
+$right-side-color: #F2F2F2;
+$hr-color: #BDBDBD;
+$btn-text-color: #FFFFFF;
+
+header{
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 20px 0; 
+    h1{
+        font-family: 'Montserrat', sans-serif;  
+        font-weight: 600;
+        font-size: 36px;
+        color: $main-head-color;
+    }
+}
+
+
+main{
+max-width: 90%;
+margin: 0 auto;
+padding: 20px 0;
+display: flex;
+flex-direction: column-reverse;
+justify-content: space-between;
+
+.right{
+    // max-width: 100%;
+    border-radius: 12px;
+    background : $right-side-color;
+    padding: 30px 30px 10px;
+    display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+
+    .main-card{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        .card{
+            display: flex;
+            margin: 15px 0;
+            .img{
+                width: 135px;
+                margin-right: 15px;
+                border-radius: 12px;
+            }
+            .text{
+                position: relative;
+                h1,p{
+                    font-family: 'Montserrat', sans-serif;  
+                    font-weight: 600;
+                    font-size: 12px;
+                    color: $main-head-color;
+                    margin: 6px 0;
+
+                    span{
+                        color: $btn-color;
+                        font-size: 14px;
+                    }
+                }
+                .value{
+                    border: 1px solid $place-text-color;
+                    border-radius: 12px;
+                    padding: 5px 7px;
+                    display: flex;
+                    justify-content: space-around;
+                    
+                }
+            }
+        }
+    }
+    .main-cost{
+        position: relative;
+        .cost{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 15px 0;
+            position: relative;
+            &:before{
+                content: '';
+                position: absolute;
+                left: 8%;
+                top:-10px;
+                border-top: 1px solid $hr-color;
+                width: 90%;
+                // display: inline-block;
+                margin: 5px 0;
+            }
+            
+            p{
+                font-family: 'Montserrat', sans-serif;  
+                font-weight: 600;
+                font-size: 14px;
+                color: $sub-head-color;
+            }
+        }
+    }
+}
+
+.left{
+    // max-width: 90%;
+    position: relative;
+    .left-head{
+        font-family: 'Montserrat', sans-serif;  
+    font-weight: 600;
+    font-size: 18px;
+    color: $sub-head-color;
+    margin: 20px 0;
+    }
+    form{
+        label{
+            font-family: 'Montserrat', sans-serif;  
+    font-weight: 600;
+    font-size: 12px;
+    color: $label-color;
+    // margin: 15px 0;
+    }
+        .form-desc{
+            position: relative;
+            margin: 7px 0;
+
+            #fname{
+                font-family: 'Montserrat', sans-serif;  
+                font-weight: 600;
+                font-size: 12px;
+                color: $sub-head-color;
+            }
+            input[type="text"]{
+                // text-align: center;
+                border: 1px solid $place-text-color;
+                border-radius: 12px;
+                padding: 12px 30px;
+                width: 100%;
+                resize: vertical;
+                box-sizing: border-box;
+                outline: none
+            }
+            
+            .fa{
+                position: absolute;
+                left: 2%;
+                top: 12px;
+                color: $place-text-color;
+            }
+        }
+        .count-post{
+            .form-desc{
+                .fa-globe-africa{
+                position: absolute;
+                left: 2%;
+                top: 31px;
+                color: $place-text-color;
+            }
+                select{
+                border: 1px solid $place-text-color;
+                border-radius: 12px;
+                padding: 12px 30px;
+                width: 100%;
+                resize: vertical;
+                box-sizing: border-box;
+                outline: none;
+                font-family: 'Montserrat', sans-serif;  
+                font-weight: 600;
+                font-size: 12px;
+                color: $label-color;
+                
+            }
+            }
+        }
+        input[type="checkbox"]{
+            margin-bottom: 15px;
+        }
+        input[type="submit"]{
+            position: absolute;
+            right: 0%;
+            margin-bottom: 10px;
+            padding: 15px 25px;
+            background-color: $btn-color;
+            color: white;
+            font-family: 'Montserrat', sans-serif;  
+            font-weight: 600;
+            font-size: 16px;
+            outline: none;
+            border: none;
+            border-radius: 12px;
+        }
+    }
+    }
+}
+
+$break-point: 641px;
+@media screen and (min-width:$break-point){
+    main{
+        flex-direction: row;
+        max-width: 90%;
+        .left{
+            width: 40%;
+        }
+        .right{
+            width: 320px;
+            height: 480px;
+        }
+    }
+}

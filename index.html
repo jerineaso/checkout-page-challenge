@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout Page Master</title>
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="./css/style.css">
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" 
+  rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" 
+  integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+</head>
+<body>
+  <header>
+    <h1>Checkout</h1>
+  </header>
+  <main>
+    <div class="left">
+      <h2 class="left-head">Contact infomation</h2>
+      <form action="GET">
+        <label for="email">E-mail</label><br>
+        <div class="form-desc">
+          <i class="fa fa-envelope"></i>
+          <input type="text" id="email" name="email" placeholder="Enter your email..."><br>
+        </div>  
+        <label for="phone">Phone</label><br>
+        <div class="form-desc">
+          <i class="fa fa-phone-alt"></i>
+          <input type="text" id="phone" name="phone" placeholder="Enter your phone..."><br><br>
+        </div>
+      </form>
+      <h2 class="left-head">Shipping address</h2>
+      <form action="GET">
+        <label for="fname">Full name</label><br>
+        <div class="form-desc">
+          <i class="fa fa-envelope"></i>
+          <input type="text" id="fname" name="fname" placeholder="" value="Rodney Cotton"><br>
+        </div>  
+        <label for="address">Address</label><br>
+        <div class="form-desc">
+          <i class="fa fa-phone-alt"></i>
+          <input type="text" id="address" name="address" placeholder="Your Address..."><br>
+        </div>
+        <label for="address">City</label><br>
+        <div class="form-desc">
+          <i class="fa fa-phone-alt"></i>
+          <input type="text" id="city" name="city" placeholder="Your City..."><br>
+        </div>
+        <div class="count-post">
+          <div class="form-desc">
+            <label for="address">Country</label><br>
+            <i class="fa fa-globe-africa"></i>
+            <select name="country" id="country">
+              <option class="option" value="" disabled selected>Your Country</option>
+              <option class="option" value="india">India</option>
+              <option class="option" value="us">US</option>
+              <option class="option" value="china">China</option>
+              <option class="option" value="uk">UK</option>
+            </select>
+          </div>
+          <div class="form-desc">
+            <label for="address">Postal Code</label><br>
+            <i class="fa fa-globe-africa"></i>
+            <input type="text" id="address" name="address" placeholder="Your postal code..."><br><br>
+          </div>
+        </div>
+        <input type="checkbox" id="save" name="save" value="save">
+        <label for="save"> Save this information for next time</label><br>
+        <input type="submit" value="Continue" class="btn">
+      </form>
+    </div>
+    <div class="right">
+      <div class="main-card">
+        <div class="card">
+          <img src="./images/photo1.png" alt="Vintage" class="img">
+          <div class="text">
+            <h1>Vintage Backbag</h1>
+            <p><span>&#36;54.99</span> &nbsp;<strike>&#36;94.99</strike></p>
+            <div class="value">
+              <span class="sign">-</span>1<span class="sign">+</span>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./images/photo2.png" alt="Levi" class="img">
+          <div class="text">
+              <h1>Levi Shoes</h1>
+              <p><span>&#36;74.99</span> &nbsp;<strike>&#36;124.99</strike></p>
+            
+            <div class="value">
+              <span class="sign">-</span>1<span class="sign">+</span>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="main-cost">
+        <div class="cost">
+          <p class="head">Shipping</p>
+          <p>&#36;19</p>
+        </div>
+        <div class="cost">
+          <p class="head">Total</p>
+          <p>&#36;148.98</p>
+        </div>
+    </div>
+  </div>
+    
+  </main>
+</body>
+</html>
