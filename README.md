@@ -36,7 +36,7 @@
 
 ## Overview
 
-![screenshot](https://user-images.githubusercontent.com/16707738/92399059-5716eb00-f132-11ea-8b14-bcacdc8ec97b.png)
+![screenshot](https://github.com/jerineaso/checkout-page-challenge/blob/master/screenshots/Home.png)
 
 ### Built With
 
@@ -69,6 +69,5 @@ $ npm start
 ```
 ## Contact
 
-- Website [your-website.com](https://{your-web-site-link})
-- GitHub [@your-username](https://{github.com/your-usermame})
-- Twitter [@your-twitter](https://{twitter.com/your-username})
+- Website [Portfolio](https://jerineaso.github.io/portfolio/)
+- GitHub [@jerineaso](https://github.com/jerineaso)
